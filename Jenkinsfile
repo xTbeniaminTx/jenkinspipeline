@@ -20,7 +20,7 @@ stages{
 
         stage ('Deploy to Staging'){
               steps {
-                        bat "scp C:\ProgramData\Jenkins\.jenkins\workspace\FullyAutomated\webapp\target\*.war root@192.168.1.62:/opt/tomcat/apache-production/webapps"
+                        bat "scp C:/ProgramData/Jenkins/.jenkins/workspace/FullyAutomated/webapp/target/*.war root@192.168.1.62:/opt/tomcat/apache-production/webapps"
                     }
               }
 
