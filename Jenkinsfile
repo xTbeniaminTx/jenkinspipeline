@@ -20,7 +20,7 @@ stages{
 
         stage ('Deploy to Staging'){
               steps {
-                        bat "winscp scp:**/target/*.war root@192.168.1.62:/home/ben/apache/apache-staging/webapps"
+                        bat "scp **/target/*.war root@192.168.1.62:/opt/tomcat/apache-production/webapps"
                     }
               }
 
